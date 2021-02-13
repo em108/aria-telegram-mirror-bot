@@ -155,7 +155,7 @@ export function generateStatusMessage(totalLength: number, completedLength: numb
     message += `\n<b>Seeders</b>: <code>${seeders}</code> | <b>Peers</b>: <code>${peers || 0}</code>`;
   }
   if (!dlDetails.isUploading) {
-    message += `\n<b>GID</b>: <code>${dlDetails.gid}</code>`;
+    message += `\n<code>/cancel ${dlDetails.gid}</code>`;
   }
   var status = {
     message: message,
