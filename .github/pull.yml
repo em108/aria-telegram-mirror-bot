@@ -1,0 +1,12 @@
+version: "1"
+rules:
+  - base: master
+    upstream: arghyac35:master
+    mergeMethod: merge
+    mergeUnstable: false
+  - base: heroku_personal
+    upstream: arghyac35:heroku_personal
+    mergeMethod: merge
+  - base: dev
+    upstream: arghyac35:dev
+    mergeMethod: merge
